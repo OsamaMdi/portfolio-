@@ -1,0 +1,149 @@
+/* skills-style.css */
+
+.skills-page-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #222;
+}
+
+.skills-page-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skills-page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #e6006e;
+    margin-bottom: 40px;
+}
+
+.skills-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.skills-page-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.skills-page-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+    position: relative;
+}
+
+.skills-page-subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e6006e;
+}
+
+.skills-page-list {
+    padding-left: 20px;
+    list-style: square;
+    margin-bottom: 30px;
+    line-height: 1.7em;
+    color: #333;
+}
+
+.skills-page-list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item span {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    background-color: #e6006e;
+    height: 100%;
+    transition: width 0.6s ease-in-out;
+}
+
+.skills-page-extra-text {
+    font-size: 16px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-left: 4px solid #e6006e;
+    padding: 20px 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    line-height: 1.8em;
+}
+
+.skills-page-extra-text p {
+    margin-bottom: 20px;
+}
+
+.skills-page-extra-text strong {
+    color: #000;
+}
+
+.skills-page-back-btn {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px 30px;
+    background: #e6006e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.skills-page-back-btn:hover {
+    background: #c4005c;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .skills-page-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-page-title {
+        font-size: 28px;
+    }
+
+    .skills-page-subtitle {
+        font-size: 20px;
+    }
+
+    .skills-page-back-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
